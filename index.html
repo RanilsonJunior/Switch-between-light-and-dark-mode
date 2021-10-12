@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Tem que ser 4.7-->
+    <title>Botões</title>
+</head>
+<body>
+
+    <div class="btn_1"> <!--Botão número 1-->
+        <input type="checkbox" id="troca1"> <!--ID-->
+    </div>
+    
+    <div class="btn_2"> <!--Botão número 2-->
+        <input type="checkbox" id="troca2"> <!--ID-->
+    </div>
+    
+    <div class="btn_3"> <!--Botão número 3-->
+        <input type="checkbox" id="troca3"> <!--ID-->
+    </div>
+
+    <script>
+        const $html = document.querySelector("html")
+        const $checkbox = document.querySelector("#troca3") /*Modificar pelo ID do checkbox*/
+    
+        $checkbox.addEventListener("change", function() {
+            $html.classList.toggle("dark-mode3") /*Modificar pela class do root*/
+        })  
+    </script>
+
+    
+</body>
+</html>
