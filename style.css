@@ -186,3 +186,18 @@ background: var(--cinza);
     pointer-events: auto;
     opacity: 1;
 }/*Fim do botão para subir ao topo*/
+
+/*Inicio da barra de rolagem*/
+::-webkit-scrollbar {
+    width: 10px; 
+}
+
+::-webkit-scrollbar-track {
+    background-color: #b3b9b5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3d3d3d;
+    border-radius: 50px;
+}
+/*Fim da barra de rolagem*/
