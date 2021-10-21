@@ -16,8 +16,11 @@
     /*Botão número 3*/
     --branco2: #ffffff;
     --cinza: #3d3d3d;
-
     --fundo: #00ffff;
+
+    /*Botão para subir ao topo da página*/
+    --silver:#C0C0C0;
+    --dimgrey: #696969;
 }
 
 .dark-mode1:root { /*Class do root*/
@@ -162,7 +165,7 @@ background: var(--cinza);
 /*Fim do botão 3*/
 
 /*Inicio do botão para subir ao topo*/
-.to-top {
+.subir {
     background: var(--branco);
     position: fixed;
     bottom: 16px;
@@ -181,7 +184,7 @@ background: var(--cinza);
     transition: all .4s;
 }
 
-.to-top.active { 
+.subir.active { 
     bottom: 32px;
     pointer-events: auto;
     opacity: 1;
@@ -193,11 +196,11 @@ background: var(--cinza);
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #b3b9b5;
+    background-color: var(--silver);
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #3d3d3d;
+    background-color: var(--dimgrey);
     border-radius: 50px;
 }
 /*Fim da barra de rolagem*/

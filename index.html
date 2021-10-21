@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Tem que ser 4.7-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"> <!--Para o icone do botão que sobe até o topo da página-->
     <title>Escuro e claro</title>
 </head>
 <body>
@@ -26,30 +26,11 @@
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
-    <a href="#" class="to-top">
+    <a href="#" class="subir">
         <i class="fas fa-chevron-up"></i>
     </a>
 
-    <script>
-        const $html = document.querySelector("html")
-        const $checkbox = document.querySelector("#troca3") /*Modificar pelo ID do checkbox*/
-    
-        $checkbox.addEventListener("change", function() {
-            $html.classList.toggle("dark-mode3") /*Modificar pela class do root*/
-        })  
-    </script>
-
-    <script>
-        const toTop = document.querySelector('.to-top');
-
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 100) {
-                toTop.classList.add('active');
-            } else {
-                toTop.classList.remove('active');
-            }
-        })
-    </script>
-    
+   
+<script src="/index.js"></script>   
 </body>
 </html>
